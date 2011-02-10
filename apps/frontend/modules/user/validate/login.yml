@@ -1,0 +1,18 @@
+methods:
+  post: [username, password]
+
+names:
+  username:
+    required:     true
+    required_msg: username is required
+    validators:    validateUser
+
+  password:
+    required:     true
+    required_msg: password is required
+
+validateUser:
+    class:         validateLogin
+    param:
+      password:    password
+      login_error: account does not exist or incorrect password

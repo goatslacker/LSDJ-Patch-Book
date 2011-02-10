@@ -1,0 +1,71 @@
+propel:
+  _attributes:   { noXsd: false, defaultIdMethod: none, package: lib.model }
+
+  Instrument:
+     _attributes: { phpName: Instrument, idMethod: native }
+     id:          { type: integer, required: true, primaryKey: true, autoIncrement: true }
+     name:        { type: varchar(255), required: true }
+     stripped:    { type: varchar(255), index: true, required: true }
+     software:    { type: varchar(25), default: LSDJ, index: true, required: true, foreignTable: Ware, foreignReference: soft } 
+     type:        { type: varchar(5), index: true, required: true }
+     description: { type: longvarchar }
+     object:      { type: longvarchar }
+     owner:       { type: varchar(255), foreignTable: User, foreignReference: username }
+     author:      { type: varchar(255) }
+     author_strip:{ type: varchar(255), index: true }
+     share:       { type: boolean, default: true }
+     popularity:  { type: integer, size: 3, default: 0 }
+     sample:      { type: varchar(36) }
+     updated_at:  ~
+
+  User:
+     _attributes: { phpName: User, idMethod: native }
+     username:    { type: varchar, size: 255, required: true, primaryKey: true }
+     stripped:    { type: varchar(255), index: true }
+     realname:    { type: varchar(255) }
+     description: { type: longvarchar }
+     avatar:      { type: varchar(255) }
+     location:    { type: varchar(255) }
+     is_admin:    { type: boolean, default: false }
+
+  Tags:
+    _attributes:   { phpName: Tags, idMethod: native }
+    instrument_id: { type: integer, primaryKey: true, foreignTable: Instrument, foreignReference: id }
+    user_id:       { type: varchar(255), primaryKey: true, foreignTable: User, foreignReference: username }
+    tag:           { type: varchar(100) }
+    normalized:    { type: varchar(100), primaryKey: true }
+    created_at:    ~
+
+  Search:
+    _attributes:    { phpName: Search, idMethod: native }
+    instrument_id:  { type: integer, foreignTable: Instrument, foreignReference: id, onDelete: cascade }
+    word:           { type: varchar(255), index: true }
+    weight:         { type: integer, size: 3, default: 0 }
+    
+  Comment:
+    _attributes:   { phpName: Comment, idMethod: native }
+    id:            { type: integer, primaryKey: true, autoIncrement: true }
+    instrument_id: { type: integer, foreignTable: Instrument, foreignReference: id, onDelete: cascade }
+    author:        { type: varchar(255), default: anonymous, foreignTable: User, foreignReference: username }
+    comment:       { type: longvarchar }
+    created_at:    ~
+
+  Bank:
+    _attributes: { phpName: Bank, idMethod: native }
+    id:          { type: integer, primaryKey: true, autoIncrement: true }
+    name:        { type: varchar(255) }
+    owner:       { type: varchar(255), foreignTable: User, foreignReference: username }
+    software:    { type: varchar(25), default: LSDJ, index: true, required: true, foreignTable: Ware, foreignReference: soft } 
+    share:       { type: boolean, default: true }
+    updated_at:  ~
+
+  InstrumentBank:
+    _attributes:   { phpName: InstrumentBank, idMethod: native }
+    id:            { type: integer, primaryKey: true, autoIncrement: true }
+    bank_id:       { type: integer, foreignTable: Bank, foreignReference: id, required: true }
+    instrument_id: { type: integer, foreignTable: Instrument, foreignReference: id, onDelete: cascade, required: true }
+
+  Ware:
+    _attributes:  { phpName: Ware, idMethod: native }
+    soft:         { type: varchar(25), primaryKey: true }
+    hard:         { type: varchar(25) }

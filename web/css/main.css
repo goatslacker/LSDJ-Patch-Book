@@ -1,0 +1,423 @@
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
+{ margin: 0; padding: 0; }
+a img,:link img,:visited img { border: none; }
+
+a {text-decoration: none;}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: verdana,sans-serif;
+}
+
+fieldset {
+	border: none;
+}
+
+br.clearFloat {
+  clear: both;
+}
+
+#container {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	background: #FFF;
+	overflow: hidden;
+}
+
+#header {
+	width: 700px;
+	height: 80px;
+}
+
+#content {
+	font-size: 11px;
+	margin-top: 14px;
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 14px;
+}
+
+#content p { 
+	margin-bottom: 10px;
+}
+
+#content h1 {
+	font-family: Helvetica;
+	margin-bottom: 6px;
+}
+
+#content h1 span.user {
+	font-size:16px;
+}
+
+#content h2 {
+	font-family: Helvetica;
+	margin-bottom: 6px;
+	color: #EE9E00;
+}
+
+#content th {
+	border-bottom: 1px dotted black;
+}
+
+#header ul#navigation {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	position: relative;
+	left: -100px;
+}
+
+#header ul#navigation li {
+	float: left;
+	font-family: "Helvetica Neue", "Helvetica", sans-serif;
+	margin-right: 10px;
+	font-size: 12px;
+	margin-top: 62px;
+	font-weight: bold;
+}
+
+#header ul#navigation li.active a {
+  color: #0033AA;
+}
+
+#header ul#navigation li a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #FFF;
+	text-shadow: #DDDDDD 1px 1px;			
+}
+
+#header ul#navigation li a:hover {
+	border-bottom: 1px solid #000;
+}
+
+#content ul#navigation {
+	text-align: center;
+	list-style-type: none;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#content ul#navigation li {
+	margin-bottom: 6px;
+}
+
+#content ul#navigation li a {
+	text-decoration: none;
+	border-bottom: dotted 1px #aa4400;
+	color: #aa4400;
+}
+
+#content ul#navigation li a:hover {
+	border-bottom: solid 1px #aa4400;
+	color: #991100;
+}
+
+div.home_instrument ul {
+  list-style-type: none;
+  width: 690px;
+}
+
+div.home_instrument ul li {
+  width: 230px;
+  min-height: 30px;
+  float: left;
+}
+
+#search {
+  width: 265px;
+  text-align: center;
+  float: right;
+  clear: both;
+}
+
+#search input {
+  color: #000;
+  border: 1px solid #555;
+  text-align: left;
+  font-size: 1em;
+  padding: 2px;
+  margin: 0px;
+}
+
+#cInstrument tr th span {
+  color: #CC0000;
+}
+
+#sidebar {
+  float: right;
+  width: 190px;
+  clear:both;
+}
+
+ul#tags {
+  list-style-type: none;
+  width: 190px;
+}
+
+ul#tags li {
+  display: inline;
+  font-size: 1.3em;
+}
+
+ul#comments {
+  list-style-type: none;
+  border-bottom: 1px solid #999;
+}
+
+ul#comments li {
+  border-top: 1px solid #999;
+  padding: 5px 10px;
+  min-height: 20px;
+}
+ul#comments li.alt {
+  background: #EEE;
+}
+
+#postComment {
+  margin-top: 20px;
+  position: relative;
+  height: 120px;
+}
+
+textarea#comment {
+  background: #CCC;
+  border: 1px solid #555;
+  width: 100%;
+  height: 70px;
+}
+
+#postComment input {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background: #CCC;
+  border: 1px solid #555;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+div#content ol {
+  margin-left: 20px;
+}
+
+.newInstrument {
+  font-size: 1.3em;
+  color: #0011EE;
+  float: left;
+}
+
+.newInstrument:hover {
+  background: #CCC;
+  color: #AA4400;
+}
+
+.instrument input, .instrument select { border: none; } /* WTSnacks Recommended */
+
+td
+{
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  background-color: #fff;
+}
+
+body
+{
+  padding: 20px;
+}
+div.instrument, div.table { /* Keff recommended to use Verdana for this */
+	float: left;
+	font-size: 12px;
+	border: 1px solid #ddd;
+	margin: 10px 0;
+	margin-right: 10px;
+	padding: 5px;
+	width: 140px;
+	overflow: hidden;
+}
+
+div.instrument span, div.table span {
+	display: block;
+	padding-left: 2px;
+	position: relative;
+}
+
+div.instrument em, div.instrument input, div.instrument select {
+	padding: 0 2px;
+	position: absolute;;
+	right: 0;
+	font-style: normal;
+	background-color: #e0e0e0;
+}
+div.instrument input, div.instrument select {
+  height: 15px;
+}
+div.instrument br {
+}
+
+div.table em {
+	padding: 0 2px;
+	text-align: center;
+	border: 1px solid black;
+	background-color: #e0e0e0;
+	font-style: normal;
+}
+div#indicator
+{
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  left: 10px;
+  top: 10px;
+  z-index: 900;
+  background: url(/images/indicator.gif) no-repeat 0 0;
+}
+#INST_Table {
+  display: none;
+}
+#INST_Table.table input {
+  width: 20px;
+}
+
+.metainfo {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#login-form table tr td {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+
+#login-form input {
+	font-size: 14px;
+	padding: 4px;
+	margin: 4px;
+	font-family: Helvetica;
+	font-weight: bold;
+	border: 2px solid #FFAC0B;
+	width: 300px;
+}
+
+.submit input {
+	font-size: 16px;
+	font-family: Helvetica;
+	font-weight: bold;
+	color: #0033AA;
+	border: none;
+	background: #FFFFFF;
+}
+
+#eightbc-connect {
+	width: 254	px;
+	float: right;
+}
+
+#eightbc-connect h1 {
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
+#form-wrapper {
+	width: 420px;
+	float: left;
+}
+
+#sidebar h2 {
+  margin-top: 10px;
+}
+
+#sf_admin_content {
+  margin: 0 ! important;
+}
+
+div.metainfo a.postComment {
+  position: absolute;
+  right: 20px;
+}
+
+#license {
+  float: right;
+}
+
+#LightBox-blackout {
+  position: fixed;
+  z-index:100;
+  top: 0px;
+  left: 0px;
+  background-color:#000;
+  filter:alpha(opacity=75);
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+  height:100%;
+  width:100%;
+}
+
+* html #LightBox-blackout { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+#LightBox-wrapper {
+  position: fixed;
+  background: #ffffff;
+  z-index: 102;
+  color:#000000;
+  border: 4px solid #525252;
+  text-align:left;
+  display: none;
+  top:50%;
+  left:50%;
+  margin-left:-200px;
+  margin-top:-250px;
+}
+
+* html #LightBox-wrapper { /* ie6 hack */
+  position: absolute;
+  margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop 
+|| document.body.scrollTop) + 'px');
+}
+
+#LightBox-ajaxloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top:-150px;
+} 
+	
+#LightBox {
+  border: solid 1px #ccc;
+  margin: 0 auto;
+  padding: 45px 15px 0 15px;
+  width: 400px;
+  height: 400px;
+  overflow:auto;
+  background: #333;
+  color:#aaa;
+}
+
+#LightBox-wrapper a.close {
+  text-decoration: none;
+  position: absolute;
+  top: 0px;
+  font-size: 11px;
+  padding: 5px;
+  font-weight: bold;
+  background: #999;
+  width: 5em;
+  color: #fff;
+}
+
+#LightBox-wrapper h2 {
+  text-align: right;
+}

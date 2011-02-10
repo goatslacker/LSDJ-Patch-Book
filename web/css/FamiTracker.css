@@ -1,0 +1,74 @@
+body {
+  background: url(/images/ft.gif) repeat !important;
+}
+
+#header {
+  background: url(/images/ft-header.png) repeat !important;
+  border-bottom: 2px solid #cccccc;
+}
+
+a {
+  border-bottom: dotted 1px #333380;
+  color: #000080;
+}
+
+#container {
+  border: 2px solid #cccccc;
+}
+
+#search input {
+  background: #BABAD6;
+}
+
+#instrument_settings {
+  float: left;
+}
+
+#sequence_editor {
+  float: right;
+}
+
+#instrument_settings #editing {
+  margin-top: 50px;
+}
+
+#sequence {
+  margin: 0 20px 0 0 !important;
+  height: 150px;
+  width: 300px;
+  list-style-type: none;
+  border: 1px solid #000055;
+  position: relative;
+  background: #999;
+  overflow: hidden;
+}
+
+#sequence li {
+  background: #999;
+  border-bottom: 1px solid #FFF;
+}
+
+#sequence .bar {
+  background: #198099;
+  border: 1px solid #105060;
+  border-bottom: 0px;
+  display: block;
+  position: absolute;
+/*  bottom: 0px; */
+}
+
+#test_0 {
+  left: 0px;
+  height: 35px;
+  width: 148px;
+}
+
+#test_1 {
+  left: 150px;
+  height: 98px;
+  width: 148px;
+}
+
+#mml {
+  width: 220px;
+}

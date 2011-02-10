@@ -1,0 +1,10 @@
+#popularUser:
+#  activate:   on
+#  type:       slot
+
+#popularAuthor:
+#  activate:   on
+#  type:       slot
+
+#all:
+#  lifeTime:   600

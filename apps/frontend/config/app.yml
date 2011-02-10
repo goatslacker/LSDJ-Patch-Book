@@ -1,0 +1,19 @@
+all:
+   maintenance: off
+   universe: on
+   #tag: lsdj
+   pager:
+      homepage_max: 10
+   feed:
+      max: 10
+   tag:
+      cloud_max: 40
+   search:
+      tag_weight:          1
+      desc_weight:         2
+      title_weight:        5
+      results_max:         10
+   upload:
+      dir: samples
+  .settings:
+    timeout:    false

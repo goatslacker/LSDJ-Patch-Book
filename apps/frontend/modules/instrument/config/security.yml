@@ -1,0 +1,10 @@
+edit:
+  is_secure:   on
+  credentials: subscriber
+
+create:
+  is_secure:   on
+  credentials: subscriber
+
+all:
+  is_secure:   off

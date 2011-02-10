@@ -1,0 +1,7 @@
+methods:
+  post:             [name]
+
+names:
+  name:
+    required:       Yes 
+    required_msg:   You must name your patch

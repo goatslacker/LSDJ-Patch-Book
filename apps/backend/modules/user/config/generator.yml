@@ -1,0 +1,12 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      User
+    theme:            default
+
+    list:
+      display:        [username, realname, location, is_admin]
+      object_actions:
+        _delete:      ~
+      fields:
+        realname:     { name: Name }

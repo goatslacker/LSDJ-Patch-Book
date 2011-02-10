@@ -1,0 +1,9 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Tags
+    theme:            default
+    list:
+      display:        [instrument, user, tag]
+      object_actions:
+        _delete:       ~

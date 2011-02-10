@@ -1,0 +1,96 @@
+# default rules
+
+instrument:
+  url: /patch/:author/:name
+  param: { module: instrument, action: show }
+
+bank:
+  url: /bank/id/:id
+  param: { module: bank, action: show }
+
+instrumentFeed:
+  url: /patch/:authorStrip/:stripped
+  param: { module: instrument, action: show }
+
+homepage:
+  url:   /
+  param: { module: instrument, action: list }
+
+feed_popular:
+   url:   /feed/top
+   param: { module: feed, action: popular }
+
+search:
+  url:   /search/*
+  param: { module: instrument, action: search }
+
+type:
+  url:  /type/:type/:page
+  param: { module: instrument, action: type }
+
+tag:
+  url:   /tag/:tag/:page
+  param: { module: tag, action: show, page: 1 }
+
+tag_add:
+  url:   /tag_add
+  param: { module: tag, action: add }
+
+iLike:
+  url: /iLikeThisVeryMuch
+  param: { module: instrument, action: iLike }
+
+comment_add:
+  url:   /comment_add
+  param: { module: instrument, action: postComment }
+
+popular_tags:
+  url:   /tag_cloud
+  param: { module: tag, action: popular }
+
+login: 
+  url:   /login 
+  param: { module: user, action: login }
+
+author:
+  url: /author/:author
+  param: { module: user, action: author }
+
+user:
+  url: /user/:username
+  param: { module: user, action: show }
+
+logout:
+  url:   /logout
+  param: { module: user, action: logout }
+
+pagination:
+  url: /page/:page
+  param: { module: instrument, action: list, page: 1 }
+
+search_instrument:
+  url:   /search/*
+  param: { module: instrument, action: search }
+
+top_authors:
+  url: /top/authors/
+  param: { module: user, action: popularAuthor }
+
+top_users:
+  url: /top/users/
+  param: { module: user, action: popularUser }
+
+popular:
+  url:   /top/instruments/:page
+  param: { module: instrument, action: popular, page: 1 }
+
+default_symfony:
+  url:   /symfony/:action/*
+  param: { module: default }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

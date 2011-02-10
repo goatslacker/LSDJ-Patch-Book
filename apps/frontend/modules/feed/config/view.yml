@@ -1,0 +1,3 @@
+all:
+  has_layout: off
+  template:   feed

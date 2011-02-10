@@ -1,0 +1,21 @@
+body {
+    background: url(/images/bg.gif) repeat;
+}
+
+#header {
+    background: url(/images/header.png);
+    border-bottom: 2px solid #fbde3f;
+}
+
+a {
+  border-bottom: dotted 1px #aa4400;
+  color: #aa4400;
+}
+
+#container {
+    border: 2px solid #fbde3f;
+}
+
+#search input {
+  background: #FFEDA3;
+}

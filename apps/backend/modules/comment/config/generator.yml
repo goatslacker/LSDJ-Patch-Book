@@ -1,0 +1,12 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Comment
+    theme:            default
+    list:
+      display:        [instrument, author, comment, created_at]
+      object_actions:
+        _delete:       ~
+    
+    edit:
+      display: []

@@ -1,0 +1,13 @@
+rendering: ~
+web_debug: ~
+security:  ~
+
+universeFilter:
+  class: universeFilter
+  param:
+    host_exclude_regex: /^(www|2x26)/
+
+cache:     ~
+common:    ~
+flash:     ~
+execution: ~

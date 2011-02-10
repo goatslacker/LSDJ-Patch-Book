@@ -1,0 +1,17 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Instrument
+    theme:            default
+
+    list:
+#      fields:
+#        id:             { credentials: [subscriber] }
+      display:          [name, type, owner, author, share, popularity, updated_at]
+      object_actions:
+        _edit:          ~
+        _delete:        ~
+      max_per_page:     50
+
+    edit:
+      display:          [id, name, stripped, type, owner, description, author, author_strip, popularity, updated_at]

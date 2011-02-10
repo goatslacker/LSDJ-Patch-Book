@@ -1,0 +1,16 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        LSDJ Patch Book - Admin Panel
+    robots:       index, nofollow
+    keywords:     lsdj
+    language:     en
+
+  stylesheets:    [main]
+
+  javascripts:    []
+
+  has_layout:     on
+  layout:         layout

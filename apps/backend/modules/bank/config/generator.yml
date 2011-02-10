@@ -1,0 +1,9 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Bank
+    theme:            default
+    list:
+      display:        [name, owner, share, updated_at]
+      object_actions:
+        _delete:       ~

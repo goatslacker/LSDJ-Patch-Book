@@ -1,0 +1,19 @@
+methods:
+  post:               [file]
+
+names:
+  file:
+    required:         Yes
+    required_msg:     Please upload a file
+    validators:       myFileValidator
+    file:             true
+
+myFileValidator:
+  class:              sfFileValidator
+  param:
+#    mime_types:       
+#      - 'audio/mpeg'
+#      - 'audio/mpeg3'
+#    mime_types_error: Only MP3 format is allowed
+    max_size:         64000
+    max_size_error:   Max size is 64Kb
